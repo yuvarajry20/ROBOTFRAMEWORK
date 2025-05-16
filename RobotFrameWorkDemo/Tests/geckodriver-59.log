@@ -1,0 +1,28 @@
+1747307771218	geckodriver	INFO	Listening on 127.0.0.1:51298
+1747307774256	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51299" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\yuvar\\AppData\\Local\\Temp\\rust_mozprofile3QUrjC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1747307774580	Marionette	INFO	Marionette enabled
+1747307774687	Marionette	INFO	Listening on port 51306
+WebDriver BiDi listening on ws://127.0.0.1:51299
+Read port: 51306
+1747307774848	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1747307778919	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'loading'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ou57QlkwlmW6ugGy6aTa8qq11a_NwGzUpy3FuN33kMs.js line 2 > eval line 7268 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ou57QlkwlmW6ugGy6aTa8qq11a_NwGzUpy3FuN33kMs.js line 2 > eval line 2927 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1747307792616	Marionette	INFO	Stopped listening on port 51306
+Dynamically enable window occlusion 1
+JavaScript warning: https://c.bannerflow.net/scripts/animated-creative.7bbfa63b587693e08e77.js, line 1: Script terminated by timeout at:
+z/this.V@https://c.bannerflow.net/scripts/animated-creative.7bbfa63b587693e08e77.js:1:51827
+
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 13: Script terminated by timeout at:
+B@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:13:325
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:93:449
+
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202505080101/show_ads_impl_fy2021.js, line 350: Script terminated by timeout at:
+fI@https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202505080101/show_ads_impl_fy2021.js:350:35
+eI@https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202505080101/show_ads_impl_fy2021.js:349:733
+cI/<@https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202505080101/show_ads_impl_fy2021.js:349:868
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

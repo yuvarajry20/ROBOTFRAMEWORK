@@ -1,0 +1,18 @@
+1747299060657	geckodriver	INFO	Listening on 127.0.0.1:60825
+1747299063771	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60826" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\yuvar\\AppData\\Local\\Temp\\rust_mozprofile0uz5mT"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1747299064155	Marionette	INFO	Marionette enabled
+1747299064275	Marionette	INFO	Listening on port 60835
+Read port: 60835
+WebDriver BiDi listening on ws://127.0.0.1:60826
+1747299064340	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.gstatic.com/og/_/js/k=og.asy.en_US.wGVi1b6jCUs.2019.O/rt=j/m=_ac,_awd,ada,lldp,qads,abld/exm=/d=1/ed=1/rs=AA2YrTtEGRbOgUtVSZHuIMlPXcihqUDgew, line 100: Script terminated by timeout at:
+_.mg@https://www.gstatic.com/og/_/js/k=og.asy.en_US.wGVi1b6jCUs.2019.O/rt=j/m=_ac,_awd,ada,lldp,qads,abld/exm=/d=1/ed=1/rs=AA2YrTtEGRbOgUtVSZHuIMlPXcihqUDgew:100:292
+_.ng@https://www.gstatic.com/og/_/js/k=og.asy.en_US.wGVi1b6jCUs.2019.O/rt=j/m=_ac,_awd,ada,lldp,qads,abld/exm=/d=1/ed=1/rs=AA2YrTtEGRbOgUtVSZHuIMlPXcihqUDgew:100:438
+Ig@https://www.gstatic.com/og/_/js/k=og.asy.en_US.wGVi1b6jCUs.2019.O/rt=j/m=_ac,_awd,ada,lldp,qads,abld/exm=/d=1/ed=1/rs=AA2YrTtEGRbOgUtVSZHuIMlPXcihqUDgew:109:38
+b@https://www.gstatic.com/og/_/js/k=og.asy.en_US.wGVi1b6jCUs.2019.O/rt=j/m=_ac,_awd,ada,lldp,qads,abld/exm=/d=1/ed=1/rs=AA2YrTtEGRbOgUtVSZHuIMlPXcihqUDgew:106:471
+
+1747299112004	Marionette	INFO	Stopped listening on port 60835
+Dynamically enable window occlusion 1

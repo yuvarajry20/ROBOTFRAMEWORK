@@ -1,0 +1,24 @@
+1747307602899	geckodriver	INFO	Listening on 127.0.0.1:51074
+1747307605973	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51075" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\yuvar\\AppData\\Local\\Temp\\rust_mozprofileo96cIa"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1747307606257	Marionette	INFO	Marionette enabled
+1747307606362	Marionette	INFO	Listening on port 51082
+WebDriver BiDi listening on ws://127.0.0.1:51075
+Read port: 51082
+1747307606454	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ou57QlkwlmW6ugGy6aTa8qq11a_NwGzUpy3FuN33kMs.js line 2 > eval line 7804 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1747307615666	Marionette	INFO	Stopped listening on port 51082
+Dynamically enable window occlusion 1
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 13: Script terminated by timeout at:
+B@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:13:325
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:93:449
+
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202505130201/show_ads_impl_fy2021.js?bust=31092430, line 350: Script terminated by timeout at:
+dI@https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202505130201/show_ads_impl_fy2021.js?bust=31092430:350:35
+cI@https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202505130201/show_ads_impl_fy2021.js?bust=31092430:349:733
+aI/<@https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202505130201/show_ads_impl_fy2021.js?bust=31092430:349:868
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
