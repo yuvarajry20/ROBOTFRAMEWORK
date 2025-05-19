@@ -1,163 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-16T17:05:42.113585" rpa="false" schemaversion="5">
-<suite id="s1" name="test LoginWithResource" source="C:\Users\yuvar\ROBOTFRAMEWORK\RobotFrameWorkDemo\Tests\test_LoginWithResource.robot">
-<test id="s1-t1" name="Validate Unsuccessfull Login" line="11">
-<kw name="Open the browser with URL" owner="resources">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-19T10:45:05.159247" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Draganddrop" source="C:\Users\yuvar\ROBOTFRAMEWORK\RobotFrameWorkDemo\Tests\test_draganddrop.robot">
+<test id="s1-t1" name="Verify that user can drag and drop elements" line="10">
+<kw name="Open the browser with URL">
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-05-16T17:05:42.529195" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<arg>Chrome</arg>
+<msg time="2025-05-19T10:45:05.477173" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<arg>${browser_name}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-05-16T17:05:42.529009" elapsed="1.384810"/>
+<status status="PASS" start="2025-05-19T10:45:05.477017" elapsed="5.372243"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-16T17:05:43.914495" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
-<arg>${url}</arg>
+<msg time="2025-05-19T10:45:10.849824" level="INFO">Opening url 'https://demoqa.com/droppable'</msg>
+<arg>https://demoqa.com/droppable</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-16T17:05:43.914201" elapsed="5.278805"/>
+<status status="PASS" start="2025-05-19T10:45:10.849600" elapsed="8.795869"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-16T17:05:49.193223" elapsed="0.036944"/>
+<status status="PASS" start="2025-05-19T10:45:19.645765" elapsed="0.273309"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-05-16T17:05:49.230354" elapsed="0.001327"/>
+<status status="PASS" start="2025-05-19T10:45:19.919369" elapsed="0.004744"/>
 </kw>
-<status status="PASS" start="2025-05-16T17:05:42.528171" elapsed="6.703691"/>
+<status status="PASS" start="2025-05-19T10:45:05.476413" elapsed="14.447865"/>
 </kw>
-<kw name="Fill the login form">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-16T17:05:49.233144" level="INFO">Typing text '45678' into text field 'css:input[name=username]'.</msg>
-<arg>css:input[name=username]</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-16T17:05:49.232766" elapsed="0.678367"/>
-</kw>
-<kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-05-16T17:05:49.911824" level="INFO">Typing password into text field 'css:input[name=password]'.</msg>
-<msg time="2025-05-16T17:05:49.950249" level="INFO">Temporally setting log level to: NONE</msg>
-<arg>css:input[name=password]</arg>
-<arg>${password}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-16T17:05:49.911429" elapsed="0.095412"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-16T17:05:50.007410" level="INFO">Clicking button 'class:orangehrm-login-button'.</msg>
-<arg>class:orangehrm-login-button</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-16T17:05:50.007125" elapsed="0.107140"/>
-</kw>
-<arg>${invalid_password}</arg>
-<arg>${invalid_password}</arg>
-<status status="PASS" start="2025-05-16T17:05:49.232372" elapsed="0.882098"/>
-</kw>
-<kw name="verify error message on login page">
+<kw name="Verify element Text before drag">
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-16T17:05:50.115697" level="INFO">Verifying element 'css:.oxd-alert-content--error' contains exact text 'Invalid credentials'.</msg>
-<arg>${login_error_Message}</arg>
-<arg>Invalid credentials</arg>
+<msg time="2025-05-19T10:45:19.925925" level="INFO">Verifying element 'id:droppable' contains exact text 'Drop here'.</msg>
+<arg>id:droppable</arg>
+<arg>Drop here</arg>
+<arg>timeouts=5</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-16T17:05:50.115437" elapsed="1.280670"/>
+<status status="PASS" start="2025-05-19T10:45:19.925411" elapsed="0.034106"/>
 </kw>
-<status status="PASS" start="2025-05-16T17:05:50.115024" elapsed="1.281189"/>
+<status status="PASS" start="2025-05-19T10:45:19.924985" elapsed="0.034740"/>
 </kw>
-<kw name="Close Browser Session">
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-16T17:05:51.397173" elapsed="2.219063"/>
+<kw name="Drag the element and drop">
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:draggable</arg>
+<arg>id:droppable</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2025-05-19T10:45:19.960505" elapsed="0.583259"/>
 </kw>
-<status status="PASS" start="2025-05-16T17:05:51.396676" elapsed="2.219709"/>
+<status status="PASS" start="2025-05-19T10:45:19.960117" elapsed="0.583788"/>
 </kw>
-<tag>Regression</tag>
-<tag>Smoke</tag>
-<status status="PASS" start="2025-05-16T17:05:42.527048" elapsed="11.089825"/>
-</test>
-<test id="s1-t2" name="Validate Successfull Login" line="18">
-<kw name="Open the browser with URL" owner="resources">
-<kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-05-16T17:05:53.618561" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<arg>Chrome</arg>
-<doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-05-16T17:05:53.618417" elapsed="1.345555"/>
-</kw>
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-16T17:05:54.964453" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
-<arg>${url}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-16T17:05:54.964224" elapsed="5.078089"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-16T17:06:00.042482" elapsed="0.030519"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
-<arg>5</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-05-16T17:06:00.073266" elapsed="0.001502"/>
-</kw>
-<status status="PASS" start="2025-05-16T17:05:53.618115" elapsed="6.456824"/>
-</kw>
-<kw name="Fill the login form">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-16T17:06:00.076126" level="INFO">Typing text 'Admin' into text field 'css:input[name=username]'.</msg>
-<arg>css:input[name=username]</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-16T17:06:00.075871" elapsed="0.726994"/>
-</kw>
-<kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-05-16T17:06:00.803465" level="INFO">Typing password into text field 'css:input[name=password]'.</msg>
-<msg time="2025-05-16T17:06:00.856489" level="INFO">Temporally setting log level to: NONE</msg>
-<arg>css:input[name=password]</arg>
-<arg>${password}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-16T17:06:00.803126" elapsed="0.116561"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-16T17:06:00.920101" level="INFO">Clicking button 'class:orangehrm-login-button'.</msg>
-<arg>class:orangehrm-login-button</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-16T17:06:00.919901" elapsed="0.100845"/>
-</kw>
-<arg>${valid_username}</arg>
-<arg>${valid_password}</arg>
-<status status="PASS" start="2025-05-16T17:06:00.075419" elapsed="0.945458"/>
-</kw>
-<kw name="Verify Dashboard page opens">
+<kw name="verify element text after drag">
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-16T17:06:01.022046" level="INFO">Verifying element 'css:.oxd-topbar-header-breadcrumb-module' contains exact text 'Dashboard'.</msg>
-<arg>${Dashboard_Text}</arg>
-<arg>Dashboard</arg>
+<msg time="2025-05-19T10:45:20.544939" level="INFO">Verifying element 'id:droppable' contains exact text 'Dropped!'.</msg>
+<arg>id:droppable</arg>
+<arg>Dropped!</arg>
+<arg>timeout=5</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-16T17:06:01.021660" elapsed="1.734059"/>
+<status status="PASS" start="2025-05-19T10:45:20.544719" elapsed="0.014207"/>
 </kw>
-<status status="PASS" start="2025-05-16T17:06:01.021230" elapsed="1.734667"/>
+<status status="PASS" start="2025-05-19T10:45:20.544406" elapsed="0.014616"/>
 </kw>
-<kw name="Close Browser Session">
-<kw name="Close Browser" owner="SeleniumLibrary">
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-16T17:06:02.756660" elapsed="2.139349"/>
+<status status="PASS" start="2025-05-19T10:45:20.559293" elapsed="3.023547"/>
 </kw>
-<status status="PASS" start="2025-05-16T17:06:02.756348" elapsed="2.139762"/>
-</kw>
-<tag>UIT</tag>
-<status status="PASS" start="2025-05-16T17:05:53.617640" elapsed="11.278795"/>
+<status status="PASS" start="2025-05-19T10:45:05.475652" elapsed="18.107607"/>
 </test>
-<doc>Tests to login to login Page</doc>
-<status status="PASS" start="2025-05-16T17:05:42.115634" elapsed="22.781694"/>
+<doc>To validate the Drag and drop</doc>
+<status status="PASS" start="2025-05-19T10:45:05.160768" elapsed="18.423747"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">Regression</stat>
-<stat pass="1" fail="0" skip="0">Smoke</stat>
-<stat pass="1" fail="0" skip="0">UIT</stat>
 </tag>
 <suite>
-<stat name="test LoginWithResource" id="s1" pass="2" fail="0" skip="0">test LoginWithResource</stat>
+<stat name="Test Draganddrop" id="s1" pass="1" fail="0" skip="0">Test Draganddrop</stat>
 </suite>
 </statistics>
 <errors>

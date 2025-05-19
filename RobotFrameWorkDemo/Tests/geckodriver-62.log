@@ -1,0 +1,25 @@
+1747629929008	geckodriver	INFO	Listening on 127.0.0.1:50157
+1747629932048	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50158" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\yuvar\\AppData\\Local\\Temp\\rust_mozprofileo6XIo0"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1747629932516	Marionette	INFO	Marionette enabled
+1747629932666	Marionette	INFO	Listening on port 50165
+WebDriver BiDi listening on ws://127.0.0.1:50158
+Read port: 50165
+1747629932880	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://api.b2c.com/api/init-67837llrmed7abvew8my.js?adID=607887417&advertiserID=5481501&campaignID=31418751&creativeID=230650165&placementID=415562846&environment=j&siteid=9008513&country=ct=IN&st=&city=7295&dma=0&zp=641006&bw=4&match=0&site=N339201.4066079OMDPROGRAMMATICUA&landingpage=https://www.visitdubai.com/en/travel-to-dubai/in%3Futm_source%3Dprogrammatic%26utm_medium%3Ddisplay%26utm_campaign%3Dseasonalaonapac%26utm_term%3Dind-en_genericfamilyseta2%26utm_content%3Dconsideration_banner160x600_OPXInmarketAll%26dclid%3D%25edclid!%26gad_source%3D7, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/NdcEX0DpFayTMkWQ0TapfDEvfQpp1jELdfUcJp2MvF0.js line 2 > eval line 7317 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/NdcEX0DpFayTMkWQ0TapfDEvfQpp1jELdfUcJp2MvF0.js line 2 > eval line 1073 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1747629949573	Marionette	INFO	Stopped listening on port 50165
+Dynamically enable window occlusion 1
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 13: Script terminated by timeout at:
+B@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:13:325
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:93:449
+
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202505130101/show_ads_impl_fy2021.js, line 349: Script terminated by timeout at:
+uI@https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202505130101/show_ads_impl_fy2021.js:349:35
+tI@https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202505130101/show_ads_impl_fy2021.js:348:970
+rI/<@https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202505130101/show_ads_impl_fy2021.js:348:1105
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
