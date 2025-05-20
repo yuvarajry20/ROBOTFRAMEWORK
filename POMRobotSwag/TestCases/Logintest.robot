@@ -14,17 +14,21 @@ ${password}
 ${expected_result}
 
 *** Test Cases ***
-Validate Login with    ${username}    ${password}    ${expected_result}
+Validate Login with    ${username}    ${password}
 
 *** Keywords ***
 Validate Login Scenarios
-    [Arguments]    ${username}    ${password}    ${expected_result}
+    [Arguments]    ${username}    ${password} 
     LoginResources.Fill the login form    ${username}    ${password}
     
-    IF    '${expected_result}' == 'success'
+    IF    '${username}' == 'standard_user' or '${username}'=='performance_glitch_user' or '${username}'=='error_user' or '${username}'=='visual_user'
         LoginResources.Verify the product title
-    ELSE IF    '${expected_result}' == 'locked_out'
+    ELSE IF    '${username}' == 'locked_out_user'
         LoginResources.Verify the error message is displayed for lockedoutuser
-    ELSE IF    '${expected_result}' == 'wrong'
+    ELSE IF    '${username}' == 'problem_user'
         LoginResources.Verify the error message is displayed for wrong Credentials
+    ELSE IF    '${password}' == 'emptyusername'
+        LoginResources.verify the error message is displayed for empty username
+    ELSE IF    '${username}' == 'emptypassword'
+        LoginResources.Verify the error message is displayed for empty password
     END

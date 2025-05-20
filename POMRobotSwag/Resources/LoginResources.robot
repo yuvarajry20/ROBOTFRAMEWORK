@@ -3,7 +3,7 @@ Documentation    All the Page objects and Keywords of logging page
 Library    SeleniumLibrary
 
 *** Variables ***
-${products_title}    xpath://div[text()='Products']
+${products_title}    xpath://span[text()='Products']
 ${error_msg}    xpath://h3[@data-test='error']
 
 *** Keywords ***
@@ -18,6 +18,12 @@ Verify the error message is displayed for lockedoutuser
 
 Verify the error message is displayed for wrong Credentials
     Element Text Should Be    ${error_msg}    Epic sadface: Username and password do not match any user in this service
+
+Verify the error message is displayed for empty password
+    Element Text Should Be    ${error_msg}    Epic sadface: Password is required
+
+verify the error message is displayed for empty username
+    Element Text Should Be    ${error_msg}    Epic sadface: Username is required
 
 Verify the product title 
     Element Text Should Be    ${products_title}    Products

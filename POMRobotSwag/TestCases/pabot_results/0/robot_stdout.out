@@ -1,0 +1,28 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.CancelbtnTest :: Tests to Validate the Checkout cancel button       
+==============================================================================
+Add the product to the cart and go to checkout and verify the canc...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\yuvar\ROBOTFRAMEWORK\POMRobotSwag\TestCases\CancelbtnTest.robot:16
+    T:  Add the product to the cart and go to checkout and verify the cancel button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\yuvar\ROBOTFRAMEWORK\POMRobotSwag\TestCases\CancelbtnTest.robot:21
+      click the checkout button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\yuvar\ROBOTFRAMEWORK\POMRobotSwag\Resources\CancelbtnResources.robot:23
+      Click Button    ${checkout}
+      |  ${checkout} = id:checkout (str)
+______________________________________________________________________________
+| FAIL |
+Button with locator 'id:checkout' not found.
+------------------------------------------------------------------------------
+TestCases.CancelbtnTest :: Tests to Validate the Checkout cancel b... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\yuvar\ROBOTFRAMEWORK\POMRobotSwag\TestCases\pabot_results\0\output.xml

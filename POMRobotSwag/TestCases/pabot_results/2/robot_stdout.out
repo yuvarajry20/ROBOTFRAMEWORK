@@ -1,20 +1,29 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
-TestCases.Logintest :: Tests to Login to Login Page                           
+TestCases.RemoveAddtoCartTest :: Tests to Validate the AddtoCart remove button
 ==============================================================================
-Validate Login with                                                   | PASS |
+Add the product to the cart and remove the product                    Sauce Labs Backpack
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\yuvar\ROBOTFRAMEWORK\POMRobotSwag\TestCases\RemoveAddtoCartTest.robot:16
+    T:  Add the product to the cart and remove the product    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\yuvar\ROBOTFRAMEWORK\POMRobotSwag\TestCases\RemoveAddtoCartTest.robot:24
+      now check the product is removed successfully    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\yuvar\ROBOTFRAMEWORK\POMRobotSwag\Resources\RemoveAddtoCartResources.robot:29
+      Element Should Not Be Visible    ${productsaucelabs}
+      |  ${productsaucelabs} = id:item_4_title_link (str)
+______________________________________________________________________________
+| FAIL |
+The element 'id:item_4_title_link' should not be visible, but it is.
 ------------------------------------------------------------------------------
-Validate Login with                                                   | PASS |
-------------------------------------------------------------------------------
-Validate Login with                                                   | PASS |
-------------------------------------------------------------------------------
-Validate Login with                                                   | PASS |
-------------------------------------------------------------------------------
-TestCases.Logintest :: Tests to Login to Login Page                   | PASS |
-4 tests, 4 passed, 0 failed
+TestCases.RemoveAddtoCartTest :: Tests to Validate the AddtoCart r... | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-TestCases                                                             | PASS |
-4 tests, 4 passed, 0 failed
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
 Output:  C:\Users\yuvar\ROBOTFRAMEWORK\POMRobotSwag\TestCases\pabot_results\2\output.xml

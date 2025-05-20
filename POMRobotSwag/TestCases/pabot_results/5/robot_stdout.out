@@ -3,10 +3,26 @@ TestCases
 ==============================================================================
 TestCases.Logintest :: Tests to Login to Login Page                           
 ==============================================================================
-TestCases.Logintest :: Tests to Login to Login Page                   | SKIP |
-0 tests, 0 passed, 0 failed
+Validate Login with                                                   | PASS |
+------------------------------------------------------------------------------
+Validate Login with                                                   | PASS |
+------------------------------------------------------------------------------
+Validate Login with                                                   | PASS |
+------------------------------------------------------------------------------
+Validate Login with                                                   | PASS |
+------------------------------------------------------------------------------
+Validate Login with                                                   | PASS |
+------------------------------------------------------------------------------
+Validate Login with                                                   | PASS |
+------------------------------------------------------------------------------
+Validate Login with                                                   | PASS |
+------------------------------------------------------------------------------
+Validate Login with                                                   | PASS |
+------------------------------------------------------------------------------
+TestCases.Logintest :: Tests to Login to Login Page                   | PASS |
+8 tests, 8 passed, 0 failed
 ==============================================================================
-TestCases                                                             | SKIP |
-0 tests, 0 passed, 0 failed
+TestCases                                                             | PASS |
+8 tests, 8 passed, 0 failed
 ==============================================================================
 Output:  C:\Users\yuvar\ROBOTFRAMEWORK\POMRobotSwag\TestCases\pabot_results\5\output.xml
