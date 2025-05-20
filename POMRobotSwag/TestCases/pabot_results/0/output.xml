@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-20T13:16:24.137255" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Users\yuvar\ROBOTFRAMEWORK\POMRobotSwag\TestCases">
+<suite id="s1-s1" name="CancelbtnTest" source="C:\Users\yuvar\ROBOTFRAMEWORK\POMRobotSwag\TestCases\CancelbtnTest.robot">
+<test id="s1-s1-t1" name="Add the product to the cart and go to checkout and verify the cancel button" line="16">
+<kw name="Open the browser with URL" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-05-20T13:16:24.506119" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2025-05-20T13:16:24.505662" elapsed="1.780504"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-20T13:16:26.287024" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-20T13:16:26.286545" elapsed="1.259676"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-20T13:16:27.546648" elapsed="0.683323"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-20T13:16:28.230278" elapsed="0.004850"/>
+</kw>
+<status status="PASS" start="2025-05-20T13:16:24.504729" elapsed="3.730647"/>
+</kw>
+<kw name="Fill the login form" owner="LoginResources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-20T13:16:28.237302" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T13:16:28.236599" elapsed="0.877344"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-20T13:16:29.114745" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-05-20T13:16:29.303151" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T13:16:29.114276" elapsed="0.937217"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-20T13:16:30.052340" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T13:16:30.051865" elapsed="0.700323"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-05-20T13:16:28.235818" elapsed="2.516612"/>
+</kw>
+<kw name="click the add to cart for a product" owner="CancelbtnResources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-20T13:16:30.753881" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-backpack'.</msg>
+<arg>${addtocart}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T13:16:30.753421" elapsed="0.332517"/>
+</kw>
+<status status="PASS" start="2025-05-20T13:16:30.752807" elapsed="0.333464"/>
+</kw>
+<kw name="click the shopping cart link" owner="CancelbtnResources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-20T13:16:31.087945" level="INFO">Clicking element 'xpath://a[@data-test='shopping-cart-link']'.</msg>
+<arg>${shoppingCart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T13:16:31.087423" elapsed="0.389094"/>
+</kw>
+<status status="PASS" start="2025-05-20T13:16:31.086723" elapsed="0.390126"/>
+</kw>
+<kw name="click the checkout button" owner="CancelbtnResources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-20T13:16:31.478643" level="INFO">Clicking button 'id:checkout'.</msg>
+<msg time="2025-05-20T13:16:43.183839" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-20T13:16:43.185392" level="FAIL">Button with locator 'id:checkout' not found.</msg>
+<arg>${checkout}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2025-05-20T13:16:31.477931" elapsed="11.719652">Button with locator 'id:checkout' not found.</status>
+</kw>
+<status status="FAIL" start="2025-05-20T13:16:31.477302" elapsed="11.721490">Button with locator 'id:checkout' not found.</status>
+</kw>
+<kw name="provide the firstname" owner="CancelbtnResources">
+<status status="NOT RUN" start="2025-05-20T13:16:43.199359" elapsed="0.000219"/>
+</kw>
+<kw name="provide the lastname" owner="CancelbtnResources">
+<status status="NOT RUN" start="2025-05-20T13:16:43.201695" elapsed="0.000247"/>
+</kw>
+<kw name="provide the zipcode" owner="CancelbtnResources">
+<status status="NOT RUN" start="2025-05-20T13:16:43.202254" elapsed="0.000139"/>
+</kw>
+<kw name="click the continue btn" owner="CancelbtnResources">
+<status status="NOT RUN" start="2025-05-20T13:16:43.202618" elapsed="0.000130"/>
+</kw>
+<kw name="click the cancel btn" owner="CancelbtnResources">
+<status status="NOT RUN" start="2025-05-20T13:16:43.202948" elapsed="0.000156"/>
+</kw>
+<kw name="verify the page is the home page" owner="CancelbtnResources">
+<status status="NOT RUN" start="2025-05-20T13:16:43.203365" elapsed="0.000306"/>
+</kw>
+<kw name="Close the browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-20T13:16:43.208330" elapsed="3.140345"/>
+</kw>
+<status status="PASS" start="2025-05-20T13:16:43.204252" elapsed="3.144679"/>
+</kw>
+<status status="FAIL" start="2025-05-20T13:16:24.503485" elapsed="21.845576">Button with locator 'id:checkout' not found.</status>
+</test>
+<doc>Tests to Validate the Checkout cancel button</doc>
+<status status="FAIL" start="2025-05-20T13:16:24.177695" elapsed="22.174035"/>
+</suite>
+<status status="FAIL" start="2025-05-20T13:16:24.161786" elapsed="22.191064"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TestCases" id="s1" pass="0" fail="1" skip="0">TestCases</stat>
+<stat name="CancelbtnTest" id="s1-s1" pass="0" fail="1" skip="0">TestCases.CancelbtnTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

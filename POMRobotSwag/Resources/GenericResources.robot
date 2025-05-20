@@ -3,7 +3,7 @@ Documentation    A resource file with reusable keywords and variables
 Library    SeleniumLibrary
 
 *** Variables ***
-${url}    https://www.saucedemo.com/v1/index.html
+${url}    https://www.saucedemo.com/
 ${browser_name}    Chrome
 
 *** Keywords ***

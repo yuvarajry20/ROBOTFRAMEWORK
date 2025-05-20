@@ -1,5 +1,7 @@
-datasources:9861b00812a7bb4d6b779a39ccdad80687a95f3d
+datasources:9f55208b6f661b2d51505b29e543cf9fd33c75d5
 commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
 suitesfrom:no-suites-from-option
-file:7b322855b95096da9aa7b244172775c96286c7f9
+file:ee594e9c8a6c58e849f38252f6127c8caaf2df8a
+--test TestCases.CancelbtnTest.Add the product to the cart and go to checkout and verify the cancel button
 --test TestCases.Logintest.Validate Login with
+--test TestCases.RemoveAddtoCartTest.Add the product to the cart and remove the product

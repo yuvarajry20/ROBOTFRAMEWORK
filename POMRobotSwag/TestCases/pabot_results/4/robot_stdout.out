@@ -11,10 +11,18 @@ Validate Login with                                                   | PASS |
 ------------------------------------------------------------------------------
 Validate Login with                                                   | PASS |
 ------------------------------------------------------------------------------
+Validate Login with                                                   | PASS |
+------------------------------------------------------------------------------
+Validate Login with                                                   | PASS |
+------------------------------------------------------------------------------
+Validate Login with                                                   | PASS |
+------------------------------------------------------------------------------
+Validate Login with                                                   | PASS |
+------------------------------------------------------------------------------
 TestCases.Logintest :: Tests to Login to Login Page                   | PASS |
-4 tests, 4 passed, 0 failed
+8 tests, 8 passed, 0 failed
 ==============================================================================
 TestCases                                                             | PASS |
-4 tests, 4 passed, 0 failed
+8 tests, 8 passed, 0 failed
 ==============================================================================
 Output:  C:\Users\yuvar\ROBOTFRAMEWORK\POMRobotSwag\TestCases\pabot_results\4\output.xml
