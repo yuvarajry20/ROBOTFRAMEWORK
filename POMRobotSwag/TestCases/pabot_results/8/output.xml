@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-19T17:18:35.527855" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Users\yuvar\ROBOTFRAMEWORK\POMRobotSwag\TestCases">
+<suite id="s1-s1" name="Logintest" source="C:\Users\yuvar\ROBOTFRAMEWORK\POMRobotSwag\TestCases\Logintest.robot">
+<doc>Tests to Login to Login Page</doc>
+<status status="SKIP" start="2025-05-19T17:18:35.575837" elapsed="1.464141"/>
+</suite>
+<status status="SKIP" start="2025-05-19T17:18:35.558300" elapsed="1.483304"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TestCases" id="s1" pass="0" fail="0" skip="0">TestCases</stat>
+<stat name="Logintest" id="s1-s1" pass="0" fail="0" skip="0">TestCases.Logintest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
