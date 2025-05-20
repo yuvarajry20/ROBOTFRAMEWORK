@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-19T14:09:18.652694" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Users\yuvar\ROBOTFRAMEWORK\POMRobot\TestCases">
+<suite id="s1-s1" name="LoginPageTest" source="C:\Users\yuvar\ROBOTFRAMEWORK\POMRobot\TestCases\LoginPageTest.robot">
+<test id="s1-s1-t1" name="Validate successful Login" line="26">
+<kw name="Open the browser with URL" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:09:19.118141" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2025-05-19T14:09:19.117591" elapsed="3.215573"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:09:22.334612" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-19T14:09:22.333772" elapsed="7.582313"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-19T14:09:29.916509" elapsed="0.043440"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-19T14:09:29.960155" elapsed="0.003869"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:09:19.116211" elapsed="10.848149"/>
+</kw>
+<kw name="Fill the login form" owner="LoginResources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:09:29.966942" level="INFO">Typing text 'Admin' into text field 'css:input[name=username]'.</msg>
+<arg>css:input[name=username]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T14:09:29.966043" elapsed="1.256966"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:09:31.223853" level="INFO">Typing password into text field 'css:input[name=password]'.</msg>
+<msg time="2025-05-19T14:09:31.258786" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>css:input[name=password]</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T14:09:31.223306" elapsed="0.090848"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:09:31.315055" level="INFO">Clicking button 'css:.orangehrm-login-button'.</msg>
+<arg>css:.orangehrm-login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T14:09:31.314722" elapsed="0.087411"/>
+</kw>
+<arg>${valid_username}</arg>
+<arg>${valid_password}</arg>
+<status status="PASS" start="2025-05-19T14:09:29.964974" elapsed="1.437305"/>
+</kw>
+<kw name="verify Dashboard page opens" owner="DashBoardResources">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:09:31.403218" level="INFO">Verifying element 'css:.oxd-topbar-header-breadcrumb-module' contains exact text 'Dashboard'.</msg>
+<arg>${dashboard_title}</arg>
+<arg>Dashboard</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-19T14:09:31.402926" elapsed="1.762645"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:09:31.402480" elapsed="1.763265"/>
+</kw>
+<kw name="Close the browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-19T14:09:33.166433" elapsed="2.144764"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:09:33.166010" elapsed="2.145382"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:09:19.114747" elapsed="16.196814"/>
+</test>
+<doc>Tests to Login to Login Page</doc>
+<status status="PASS" start="2025-05-19T14:09:18.710896" elapsed="16.601611"/>
+</suite>
+<status status="PASS" start="2025-05-19T14:09:18.686056" elapsed="16.629904"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TestCases" id="s1" pass="1" fail="0" skip="0">TestCases</stat>
+<stat name="LoginPageTest" id="s1-s1" pass="1" fail="0" skip="0">TestCases.LoginPageTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
