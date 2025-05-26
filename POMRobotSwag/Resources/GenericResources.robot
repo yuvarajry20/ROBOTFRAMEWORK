@@ -4,7 +4,7 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${url}    https://www.saucedemo.com/
-${browser_name}    Chrome
+${browser_name}    Firefox
 
 *** Keywords ***
 Open the browser with URL
